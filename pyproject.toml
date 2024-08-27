@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "recruitment"
+version = "0.1.0"
+description = ""
+authors = ["Neel Gokhale <neel@cohere.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "<=3.13,>=3.10"
+crewai-tools = "^0.8.3"
+crewai = "^0.51.1"
+selenium = "^4.23.1"
+langchain-cohere=">=0.1.4,<0.2.0"
+
+[tool.poetry.scripts]
+recruitment = "recruitment.main:run"
+train = "recruitment.main:train"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
